@@ -3,10 +3,9 @@
 # git
 .gitignore
 
-# procedure
-.togit.bat
+# procedures
+togit.bat
 0-Procedures.txt
-
 
 # vscode
 .vscode
