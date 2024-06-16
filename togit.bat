@@ -1,10 +1,10 @@
 @echo OFF
 echo.
-echo Envoi des modifications
+echo Envoi vers 'github'
 echo.
+REM pause
 git init
 git add .
+git remote add origin https://github.com/aplus-services/lyrae-v14.git
 git commit -m "update %date%-%time%"
-git branch -M main
-git remote add origin https://github.com/LE-PLATINUM/accueil.git
 git push -u origin main
