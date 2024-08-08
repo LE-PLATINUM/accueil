@@ -2,12 +2,12 @@
 
 /* 20/02/24 : Nouveau menu latéral avec fermeture par clic externe */
 /* Inspiré de https://medium.com/@maketechstuff/how-to-close-sidebar-menu-when-click-outside-it-3fff95ba2c22 */
-.menu_icon_box{
+.menu_icon_box {
   z-index: 20;
   width: 50px;
   height: 50px;
   /* background: rgba(52,58,64,0.9);     */
-  background: rgba(27,75,101,0.9);    
+  background: rgba(27, 75, 101, 0.9);
   margin: 20px;
   position: fixed;
   border-radius: 10px;
@@ -22,7 +22,9 @@
 .menu_icon_box:hover {
   background: #343a40;
 }
-.line1 , .line2 , .line3{
+.line1,
+.line2,
+.line3 {
   width: 40px;
   width: 32px;
   height: 3px;
@@ -32,25 +34,24 @@
   border-radius: 50px;
   transition: 0.2s;
 }
-.active .line1{
+.active .line1 {
   height: 4px;
   width: 44px;
-  transform: translate(-5px , 9px)rotate(45deg);
-
+  transform: translate(-5px, 9px) rotate(45deg);
 }
-.active .line2{
+.active .line2 {
   opacity: 0;
 }
-.active .line3{
+.active .line3 {
   height: 4px;
   width: 44px;
-  transform: translate(-5px , -12px)rotate(-45deg);
+  transform: translate(-5px, -12px) rotate(-45deg);
 }
 /* ¤¤¤ */
-.box{
+.box {
   width: 200px;
   height: 100vh;
-  background-color: #5FACD3;
+  background-color: #5facd3;
   position: fixed;
   text-align: left;
   z-index: 10 !important;
@@ -59,29 +60,29 @@
   right: -500px;
   pointer-events: none;
 }
-.active_box{
+.active_box {
   opacity: 1;
   right: 0px;
   pointer-events: fill;
 }
-nav{
+nav {
   padding-top: 0px;
 }
-nav ul{
+nav ul {
   margin: 0px 15px;
-  padding:0;
+  padding: 0;
 }
-nav ul li{
+nav ul li {
   list-style: none;
   margin-bottom: 30px;
   transition: 0.2s;
 }
-nav ul li:hover{
+nav ul li:hover {
   background-color: #c6c6c66f;
   border-radius: 8px;
 }
-nav ul li a{
-  color: #1B4B65;
+nav ul li a {
+  color: #1b4b65;
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 16px;
@@ -100,39 +101,26 @@ nav ul li a{
   padding-left: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* 16/02/24 : Éléments pour affichage modèle dans page séparée, avec sketchfab */
 /* Page appel */
-.sketchfab-titre
-{
+.sketchfab-titre {
   font-size: 1rem;
   font-style: italic !important;
   margin: 0;
 }
 .sketchfab-wrap {
-  position:relative;
-  width:100%;
+  position: relative;
+  width: 100%;
 }
-.sketchfab-image{
+.sketchfab-image {
   border: 1px solid black;
   width: 80%;
-  height: calc(0.45*100vw);
+  height: calc(0.45 * 100vw);
 }
 .sketchfab-bouton {
-  position : absolute;
+  position: absolute;
   top: 8%;
-  left:15%;
+  left: 15%;
   width: 50px;
   height: 50px;
   padding-left: 15px;
@@ -144,8 +132,7 @@ nav ul li a{
 }
 /* Page affichage */
 
-.vue-modele-center
-{
+.vue-modele-center {
   position: fixed;
   left: 20px;
   top: 80px;
@@ -154,22 +141,22 @@ nav ul li a{
   /* border: 3px solid red; */
 }
 
-.responsive-iframe{
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  width:100%;
-  height:100%;
-  border:0
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .vue-modele-bouton-retour {
-  position : absolute;
+  position: absolute;
   top: 15px;
   left: 15px;
-	width: 50px;
+  width: 50px;
   height: 50px;
   padding-left: 5px;
   padding-right: 5px;
@@ -177,10 +164,8 @@ nav ul li a{
 }
 .vue-modele-embed-wrapper {
   width: 100% !important;
-  height: calc(0.5*100vw);
+  height: calc(0.5 * 100vw);
 }
-
-
 
 /* 31/01/24 : Essai de réduire au chargement de la police la plus compacte en WOFF2 */
 @font-face {
@@ -192,12 +177,12 @@ nav ul li a{
 
 /* 15/02/24 : Taille logo responsive mobile */
 @media (max-width: 992px) {
-  .logo{
+  .logo {
     width: 200px !important;
   }
 }
 @media (max-width: 600px) {
-  .logo{
+  .logo {
     width: 150px !important;
   }
 }
@@ -212,8 +197,8 @@ nav ul li a{
   width: 80%;
   max-width: 640px;
   height: 60px;
-} 
-#animated-text-strip{
+}
+#animated-text-strip {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -232,14 +217,14 @@ nav ul li a{
     transform: translate(-100%, 0);
   }
 }
-#animated-text-strip{
+#animated-text-strip {
   padding: 1rem 0;
 }
-.marquee{
+.marquee {
   font-size: 1.5rem;
   font-weight: 600;
   color: #2e6758;
-  text-shadow: 2px 1px 4px #fff
+  text-shadow: 2px 1px 4px #fff;
 }
 
 /* 31/01/24 : animation hamburger menu */
@@ -366,7 +351,7 @@ model-viewer {
   text-decoration: none;
 }
 
-.texte-vert-clair{
+.texte-vert-clair {
   color: #adefe2;
 }
 
@@ -453,7 +438,7 @@ h3 {
   color: white;
   background: rgba(52, 58, 64, 0.5);
   line-height: 45px;
-  z-index:2;
+  z-index: 2;
 }
 
 .scroll-to-top:focus,
@@ -727,8 +712,8 @@ a:active {
 }
 
 .btn-primary {
-  background-color: #1B4B65 !important;
-  border-color: #1B4B65 !important;  
+  background-color: #1b4b65 !important;
+  border-color: #1b4b65 !important;
   color: #fff !important;
 }
 
@@ -737,10 +722,10 @@ a:active {
 .btn-primary:active {
   background-color: #155d74 !important;
   background-color: #0c3e31 !important;
-  background-color: #1B4B65 !important;
+  background-color: #1b4b65 !important;
   border-color: #155d74 !important;
   border-color: #0c3e31 !important;
-  border-color: #1B4B65 !important;
+  border-color: #1b4b65 !important;
 }
 
 .btn-secondary {
@@ -767,7 +752,7 @@ a:active {
 
 .bg-primary {
   background-color: #2e6758 !important;
-  background-color: #1B4B65 !important;
+  background-color: #1b4b65 !important;
 }
 
 .text-primary {

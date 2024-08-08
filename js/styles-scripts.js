@@ -63,13 +63,13 @@ window.addEventListener('DOMContentLoaded', event => {
         const scrollToTop = document.body.querySelector('.scroll-to-top');
         
         if (document.documentElement.scrollTop > 100) {
-            console.log("coucou:"+scrollToTopVisible);            
+            // console.log("coucou:"+scrollToTopVisible);            
             if (!scrollToTopVisible) {
                 fadeIn(scrollToTop);
                 scrollToTopVisible = true;
             }
         } else {
-            console.log("coucou");      
+            // console.log("coucou");      
             if (scrollToTopVisible) {
                 fadeOut(scrollToTop);
                 scrollToTopVisible = false;
