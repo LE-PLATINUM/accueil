@@ -63,7 +63,8 @@
         if (password != null) {
           // on le compare à celui attendu
           if (md5(password) == '88280b4415a8b979744ddc46f10a234a') {
-            // on construit un nom de page à partir du mot de passe et on l'ouvre
+            document.location.href = md5(password) + password + '.html';
+          } else if (md5(password) == '2d169f2c0b35106e58d556c4909e8642') {
             document.location.href = md5(password) + password + '.html';
           } else {
             alert('Mot de passe incorrect!', 'Erreur');
