@@ -736,6 +736,18 @@ a:active {
   color: #fff !important;
 }
 
+.btn-accueil {
+  background-color: #1c658dff !important;
+  border-color: #ecb807 !important;
+  color: #ecb807 !important;
+}
+
+.btn-accueil:hover {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #000 !important;
+}
+
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
