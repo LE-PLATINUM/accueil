@@ -9,3 +9,6 @@ Le basculement entre les comptes github peut nécessiter de supprimer le compte 
 puis, avant .\togit.bat
     git config user.email "j***.**g*****@f***.**"
     git config user.name "LE-PLATINUM"
+
+16/07/25 : Évolution pour gestion multi projets
+           L'accès n'est plus restrictif, sauf pour l'accès aux projets
